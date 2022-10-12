@@ -6,7 +6,7 @@
 body {
     margin: 0px;
     box-sizing: border-box;
-    font-family: var(--folklore-font)
+    font-family: var(--folklore-font);
 }
 
 .spotify_popout {
@@ -433,18 +433,48 @@ h4 a {
 }
 
 
-@media (max-width:730px) {
+@media (min-width:427px) and (max-width:768px) {
 
     article .container {
         flex-direction: column;
     }
 
     .topside {
-        justify-content: center;
+        display: flex;
+    }
+
+    .artist_photo {
+        align-items: center;
+    }
+
+    .article_body {
+        padding: 0;
+    }
+
+    .article_text {
+        max-width: none;
+        padding: 40px;
+        padding-top: 0;
     }
 
     .text_2 {
         padding: 40px;
+        padding-top: 0;
+    }
+
+    h1,
+    h2 {
+        padding: 10px;
+    }
+
+    .albuns_body {
+        flex-wrap: wrap;
+    }
+
+    .TV_explanation {
+        margin-left: 0;
+        margin: 40px;
     }
 
 }
+
